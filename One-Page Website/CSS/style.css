@@ -1,0 +1,16 @@
+.background_img {
+    background-image: url(../images/drift2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
