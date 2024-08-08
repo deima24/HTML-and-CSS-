@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    background-attachment: fixed;
 }
 
 body, html {
@@ -16,6 +16,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding: 1%;
 }
 
 .page_title {
@@ -31,11 +32,17 @@ ul {
     border-radius: 10px;
 }
 
+.nav_links {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
 }
 
-.about_page {
+.about_page,
+.galery_title {
     text-align: center;
 }
 
@@ -43,4 +50,35 @@ a {
     text-align: center;
     margin: 20px;
     font-weight: bold;
+}
+
+.galery_box {
+    background-color: #fff;
+    border: 1px solid black;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+
+.images_container {
+    display: flex;
+    flex-flow: column;
+}
+
+img,
+.image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border: 1px solid red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    margin-top: 30px;
 }
