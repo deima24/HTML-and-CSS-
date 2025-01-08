@@ -1,5 +1,156 @@
-.trip_img {
-    max-width: 300px;
-    max-height: 300px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background for a clean look */
+    color: #333; /* Dark text for readability */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Bootstrap primary color */
+    padding: 0.8rem 1.5rem;
+}
+
+.navbar .nav-link {
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107; /* Bootstrap warning color */
+}
+
+/* Section Titles */
+h1, h3, h4 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    color: #007bff; /* Same as navbar background */
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+/* Image Section */
+.image-section {
+    height: 300px;
+    background-color: #e9ecef; /* Light gray for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff; /* White background */
+    padding: 2rem 0;
+    border-top: 1px solid #dee2e6; /* Light border for separation */
+}
+
+#about img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+#about .col {
+    margin-bottom: 1.5rem;
+}
+
+#about h4 {
+    color: #007bff;
+}
+
+/* List Group */
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Trips Section */
+#trips {
+    background-color: #e9ecef;
+    padding: 2rem 0;
+}
+
+#trips img {
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Section */
+form {
+    padding: 2rem 0;
+    background-color: #ffffff;
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 1.5rem 0;
+}
+
+footer .nav-link {
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about .row, #trips .row {
+        flex-direction: column;
+    }
+
+    #about .col, #trips .col {
+        margin-bottom: 1.5rem;
+    }
+}
